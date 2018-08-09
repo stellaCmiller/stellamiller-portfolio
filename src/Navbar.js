@@ -7,8 +7,8 @@ import {
 import Portfolio from './views/Portfolio';
 import About from './views/About';
 import Contact from './views/Contact';
-import Resume from './views/Resume';
-import Home from './views/Home'
+// import Resume from './views/Resume';
+import Home from './views/Home';
 
 class Navbar extends React.Component {
     render() {
@@ -25,7 +25,7 @@ class Navbar extends React.Component {
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav">
                             <li className="nav-item">
-                                <NavLink className="nav-link" to="/home">Home</NavLink>
+                                <NavLink className="nav-link" exact to="/">Home</NavLink>
                             </li>
                             <li className="nav-item">
                                 <NavLink className="nav-link" to="/about">About</NavLink>
@@ -33,9 +33,9 @@ class Navbar extends React.Component {
                             <li className="nav-item">
                                 <NavLink className="nav-link" to="/portfolio">Portfolio</NavLink>
                             </li>
-                            <li className="nav-item">
+                            {/* <li className="nav-item">
                                 <NavLink className="nav-link" to="/resume">Resume</NavLink>
-                            </li>
+                            </li> */}
                             <li className="nav-item">
                                 <NavLink className="nav-link" to="/contact">Contact</NavLink>
                             </li>
@@ -43,10 +43,10 @@ class Navbar extends React.Component {
                     </div>
                 </nav>
                 <div className="content sticky">
-                    <Route path="/home" component={Home} />
+                    <Route exact path="/" component={Home} />
                     <Route path="/about" component={About} />
                     <Route path="/portfolio" component={Portfolio}/>
-                    <Route path="/resume" component={Resume} />
+                    {/* <Route path="/resume" component={Resume} /> */}
                     <Route path="/contact" component={Contact}/>
                 </div>
             </div>

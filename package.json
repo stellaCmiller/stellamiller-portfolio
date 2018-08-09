@@ -16,7 +16,7 @@
     "eject": "react-scripts eject",
     "deploy" : "npm run build&&gh-pages -d build"
   },
-  "homepage": "http://stellacmiller.github.io/stellaportfolio",
+  "homepage": "http://stellacmiller.github.io/stellamiller-portfolio",
   "devDependencies": {
     "gh-pages": "^1.2.0"
   }
