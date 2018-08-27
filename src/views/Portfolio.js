@@ -4,7 +4,7 @@ import p2 from '../images/wizard.png'
 import p3 from '../images/marioQuestionMarkBlock.jpg'
 import p4 from '../images/giphy.PNG'
 import p5 from '../images/rps.PNG'
-import p6 from '../images/picsum6.jpg'
+import p6 from '../images/displayStock.PNG'
 import runAnimations from '../animations';
 
 class Portfolio extends React.Component {
@@ -65,11 +65,11 @@ class Portfolio extends React.Component {
                     <div className="col-md-4 test-class" align="center" projectid="6">
                         <div className="thumbnail">
                             <img alt = "project6" src={p6} className="rounded img-fluid portfolio-img" />
-                            <h3 className="caption">Project 6</h3>
+                            <h3 className="caption">Bamazon</h3>
                         </div>
                     </div>
-                    <div id="6" className="description" github="#" deployed="#">
-                        <p>Coming Soon!</p>
+                    <div id="6" className="description" github="https://github.com/stellaCmiller/bamazon" deployed="#">
+                        <p>A Node.js and MySQL CLI marketplace featuring customer, manager, and owner commands such as purchasing items, viewing low inventory and adding new products, and viewing total sales by department. NOTE: No deployed version exists, please check the github readme file for execution instructions.</p>
                     </div>
                 </div>
             </div>
